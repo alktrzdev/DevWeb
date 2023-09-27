@@ -49,8 +49,8 @@ li:hover {
 }
 #trailer-container{ 
         width: 100%;
-        height: 600px;
-       
+        height: 400px;
+        display: flex;
         justify-content: center;
 }
 .content {
@@ -75,7 +75,7 @@ li:hover {
         color: #fff;
         font-size: 19px;
         font-family: 'Kdam Thmor Pro' , sans-serif;
-        width: 50%;
+        width: 70%;
 
 }   
 .button {
@@ -100,4 +100,73 @@ li:hover {
 .button:hover {
         background-color: #fff;
         color: #000;
+}
+
+.actor-cards-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+}
+
+.cards-content {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* esse comando divide o grid em 3 frações iguais */
+        row-gap: 20px;
+        column-gap: 40px;
+}
+
+.card {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 20px 10px;
+        color: #fff;
+        font-size: 17px;
+        font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+
+.card:hover {
+        transform: scale(1.02);
+}
+.banner-1 {
+        background-image: url('https://ovicio.com.br/wp-content/uploads/2023/05/20230513-batman-1646665044-555x555.jpeg');
+}
+.banner-2 {
+        background-image: url('https://criticalhits.com.br/wp-content/uploads/2019/10/Zoe-Kravitz.jpg');
+}
+.banner-3 {
+        background-image: url('https://deadline.com/wp-content/uploads/2019/09/shutterstock_editorial_9885494d.jpg');
+}
+
+footer {
+        height: 300px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+}
+span {
+        color: #fff;
+        font-family: 'Kdam Thmor Pro' , sans-serif;
+}
+.footer-navigation {
+        display: none;
+}
+.footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+@media(max-width: 768px){
+        
 }
